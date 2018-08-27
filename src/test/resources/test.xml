@@ -31,4 +31,41 @@
         <property name="i" value="i1" />
     </bean>
 
+    <bean id="someBusinessRule1" class="BusinessRule">
+        <property name="requestMatcher">
+            <bean class="RequestMatcher">
+                <property name="a" value="a1" />
+                <property name="b" value="b1" />
+                <property name="c" value="c1" />
+            </bean>
+        </property>
+        <property name="responses">
+            <list>
+                <ref bean="ourSide" />
+                <ref bean="theirSide1" />
+            </list>
+        </property>
+    </bean>
+
+    <bean id="ourSide" class="Row">
+        <property name="z" value="z1" />
+        <property name="x" value="x1" />
+        <property name="c" value="c1" />
+        <property name="v" value="v1" />
+    </bean>
+
+    <bean id="theirSide" class="Row">
+        <property name="t" value="t1" />
+        <property name="y" value="y1" />
+        <property name="u" value="u1" />
+        <property name="i" value="i1" />
+    </bean>
+
+
+    <bean id="theirSide1" class="Row">
+        <property name="a" value="a1" />
+        <property name="w" value="s1" />
+        <property name="s" value="d1" />
+        <property name="r" value="r1" />
+    </bean>
 </beans>
