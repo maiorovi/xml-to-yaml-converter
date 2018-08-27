@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+
+    <bean id="someBusinessRule" class="BusinessRule">
+        <property name="requestMatcher">
+            <bean class="RequestMatcher">
+                <property name="a" value="a1" />
+                <property name="b" value="b1" />
+                <property name="c" value="c1" />
+            </bean>
+        </property>
+        <property name="responses">
+            <list>
+                <ref bean="ourSide" />
+                <ref bean="theirSide" />
+            </list>
+        </property>
+    </bean>
+
+    <bean id="ourSide" class="Row">
+        <property name="q" value="q1" />
+        <property name="w" value="w1" />
+        <property name="e" value="e1" />
+        <property name="r" value="r1" />
+    </bean>
+
+    <bean id="theirSide" class="Row">
+        <property name="t" value="t1" />
+        <property name="y" value="y1" />
+        <property name="u" value="u1" />
+        <property name="i" value="i1" />
+    </bean>
+
+</beans>

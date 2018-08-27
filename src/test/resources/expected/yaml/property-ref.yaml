@@ -1,0 +1,5 @@
+id: helloWorld
+message: Hello World
+errMessage:
+  errMessageInBean: error message goes here
+  reportMessage: this is report messag

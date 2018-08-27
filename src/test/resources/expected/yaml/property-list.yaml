@@ -1,0 +1,7 @@
+id: someBean
+- id: someBeanInTheList
+  prop1Msg: this is prop1
+  prop2Msg: this is prop2
+- id: someOtherBeanInTheList
+  prop3Msg: this is prop3
+  prop4Msg: this is prop
